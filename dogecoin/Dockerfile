@@ -11,7 +11,7 @@ ENV DOGECOIN_VERSION 1.14.0
 ADD https://github.com/dogecoin/dogecoin/releases/download/v${DOGECOIN_VERSION}/dogecoin-${DOGECOIN_VERSION}-x86_64-linux-gnu.tar.gz /tmp
 RUN cd /opt \
  && tar zxvf /tmp/dogecoin-${DOGECOIN_VERSION}-x86_64-linux-gnu.tar.gz \
- && mv dogecoin-${DOGECOIN_VERSION} bitcoin \
+ && mv dogecoin-${DOGECOIN_VERSION} dogecoin \
  && rm /tmp/dogecoin-${DOGECOIN_VERSION}-x86_64-linux-gnu.tar.gz
 
 WORKDIR /opt/dogecoin/bin
